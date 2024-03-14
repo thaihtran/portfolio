@@ -4,6 +4,14 @@ body {
     background-color: #e0e0e0;
 }
 
+.hero {
+    background-image: url('./images/unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
 header {
     background-color: #504e50;
     color: #f4f4f4;
@@ -58,6 +66,7 @@ header {
 }
 
 .project {
+    background-image: url(./images/unsplash.jpg);
     flex: 1;
     min-width: 300px;
     margin: 3px;
@@ -65,8 +74,8 @@ header {
     border: 3px solid #555252;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #f4f4f4
-    transition: transform 0.3s ease;
+    background-color: #f4f4f4;
+    transition: 0.3s ease;
     text-align: center;
 }
 
@@ -80,14 +89,14 @@ header {
     border-radius: 5px;
 }
 
-.project h2 {
+.project h3 {
     margin-top: 0.5rem;
     font-size: 1.5rem;
-    color: #333;
+    color: #316957;
 }
 
 .project p {
-    color: #000000;
+    color: #38c2ec;
 }
 
 @media screen and (max-width: 768px) {
