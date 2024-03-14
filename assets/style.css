@@ -1,16 +1,37 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #a09a9a;
 }
 
 header {
-    background-color: #2c1f53;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+    background-color: #504e50;
+    color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+    border:3px inset #0f0a4e;
 }
 
+.logo-container {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+
+}
+
+.logo {
+
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+h1{
+    margin:0;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -18,36 +39,37 @@ header {
     padding: 2rem;
 }
 
-.item {
+.project {
     flex: 1;
     min-width: 300px;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
+    margin: 3px;
+    padding: 5px;
+    border: 3px solid #555252;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color: #f4f4f4
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
-.item:hover {
+.project:hover {
     transform: translateY(-5px);
 }
 
-.item img {
+.project img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.item h2 {
+.project h2 {
     margin-top: 0.5rem;
     font-size: 1.5rem;
     color: #333;
 }
 
-.item p {
-    color: #666;
+.project p {
+    color: #000000;
 }
 
 @media screen and (max-width: 768px) {
@@ -56,7 +78,7 @@ header {
         align-items: center;
     }
 
-    .item {
+    .project {
         min-width: auto;
         width: 90%;
     }
